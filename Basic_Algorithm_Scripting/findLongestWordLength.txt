@@ -14,7 +14,6 @@ function findLongestWordLength(str) {
 }
 
 //For the first time, this is a better solution than before.
-/
 
 
 console.log(findLongestWordLength("The quick brown fox jumped over the lazy dog"));
