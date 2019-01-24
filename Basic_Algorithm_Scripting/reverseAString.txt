@@ -1,31 +1,15 @@
 function reverseString(str) {
 
-    //first I tried reading str backwards and writing it one by one into a new string
 
-    //this didn't work because strings are immutable, duh
-
-
+    //after succeeding, I checked out this solution from previous effort
+    //this is a lot more concise
     
-//loop that reads str backwards and pushes onto new array
-    let backwards = [];
 
-
-    for (let i = str.length-1; i >= 0; i--) {
-
-        backwards.push(str[i]);
-
-    }
-
-
-    //now we have an array with the letters in correct order
-
-    //need to convert array to string without the commas
-
-    let backwardsString = backwards.join("");
+    str = str.split("").reverse().join("");
 
 
   
-  return backwardsString;
+  return str;
 
 }
 
