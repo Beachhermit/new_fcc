@@ -1,0 +1,25 @@
+function confirmEnding(str, target) {
+
+  //freeCodeCamp challenge. Tests a string to see if it ends in a given test string. Not allowed to use .endswith()
+
+
+  let innards = target + "$"
+;
+  let re = new RegExp(innards);
+
+  return re.test(str);
+
+
+}
+
+
+
+//completely different to how I solved it last time
+
+//last time I made a substring of the final target.length chars and compared it to target
+
+//Here I've learned how to use a variable in a regex
+
+
+
+console.log(confirmEnding("Bastian", "n"));

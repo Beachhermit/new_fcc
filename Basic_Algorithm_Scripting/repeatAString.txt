@@ -1,0 +1,33 @@
+function repeatStringNumTimes(str, num) {
+
+  // repeat after me
+
+
+  if (num < 1) {
+
+    return "";
+
+  }
+
+  
+let strTimes = [];
+
+  for (let i = 1; i <= num; i++) {
+
+    strTimes.push(str);
+
+  }
+
+  return strTimes.join("");
+
+
+ // return str.repeat(num);
+
+ //used .repeat last time, but this time it said not to
+
+
+}
+
+
+
+console.log(repeatStringNumTimes("abc", 3));
