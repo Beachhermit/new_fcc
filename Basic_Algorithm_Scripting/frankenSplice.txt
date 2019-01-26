@@ -1,0 +1,25 @@
+function frankenSplice(arr1, arr2, n) {
+
+  //freeCodeCamp challenge. Inserts first array into second array at index n.
+
+  
+
+  let array1 = arr1;
+
+  let array2 = [];
+
+  array2 = [...arr2];
+
+  
+
+  array2.splice(n, 0, ...array1);
+
+  //console.log(arr2);
+
+  return array2;
+
+}
+
+
+
+console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));

@@ -1,0 +1,38 @@
+function getIndexToIns(arr, num) {
+
+  // freeCodeCamp challenge. Sorts an array of numbers, then inserts a number in order.
+
+
+
+  if (arr == "") {  //this was tricky because I expected to test for an empty array with [], not ""
+
+    return 0;
+
+  }
+
+
+  arr.sort((a, b) => a - b);
+
+  let value;        //I ran into a scope issue, trying to return value outside of the for loop
+
+
+
+  for (value in arr) {
+
+    if (arr == "" || arr[value] >= num) {
+
+    
+      return parseInt(value);
+
+    }
+
+  }
+
+
+  return parseInt(value) + 1;
+
+}
+
+
+
+console.log(getIndexToIns([40, 60], 50));
