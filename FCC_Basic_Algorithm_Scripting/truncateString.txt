@@ -1,0 +1,21 @@
+function truncateString(str, num) {
+
+  //freeCodecamp challenge. If a string is longer than the given number, truncates the string and
+
+  //indicates the truncation with a ...
+
+  if (str.length <= num) {
+
+      return str;
+
+  }
+
+  str = str.substring(0, num) + "...";
+
+  return str;
+
+}
+
+
+
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));

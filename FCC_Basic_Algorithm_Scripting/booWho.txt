@@ -1,0 +1,13 @@
+function booWho(bool) {
+
+  // freeCodeCamp challenge. Returns whether parameter is a boolean value.
+
+
+
+  return (bool === true || bool === false);
+
+}
+
+
+
+console.log(booWho(null));

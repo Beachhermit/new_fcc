@@ -1,0 +1,32 @@
+function titleCase(str) {
+
+    
+
+    //I had each function on a separate line, but whittled it down to one.
+
+    //Not sure if it's harder to read, or better
+
+    //I found the function on StackOverflow https://stackoverflow.com/questions/2332811/capitalize-words-in-string/7592235
+
+    //At first I thought it said 1 (one) in the => part, but that didn't work. It's an l (small L)
+
+    //I don't know why one works and not the other. I tried with a different letter and it worked, so it seems to be
+
+    //a letter/number thing. ie can use a letter, but not a number.
+
+    //I've made the whole string lowercase, then replaced the first letter, and anything that comes after whitespace with
+
+    //its capital.
+
+
+
+  return str.toLowerCase().replace(/^\w|\s\w/g, n => n.toUpperCase());
+
+
+
+
+}
+
+
+
+console.log(titleCase("I'm a little tea pot"));

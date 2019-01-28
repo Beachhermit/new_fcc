@@ -1,0 +1,18 @@
+function reverseString(str) {
+
+
+    //after succeeding, I checked out this solution from previous effort
+    //this is a lot more concise
+    
+
+    str = str.split("").reverse().join("");
+
+
+  
+  return str;
+
+}
+
+
+
+reverseString("hello");

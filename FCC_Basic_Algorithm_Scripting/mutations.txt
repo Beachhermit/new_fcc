@@ -1,0 +1,33 @@
+function mutation(arr) {
+
+    //freeCodeCamp challenge. Receives an array with two strings. Checks whether all characters in second string
+
+    //also appear in first string
+
+
+
+  let compare;
+
+  for (let item in arr[1]) {
+
+    compare = new RegExp(arr[1][item], "i"); //I first tried adding the flag like a concatenated string
+
+
+
+    if (compare.test(arr[0]) === false) {
+
+      return false;
+
+    }
+
+  }
+
+
+
+  return true;
+
+}
+
+
+
+mutation(["hello", "hey"]);

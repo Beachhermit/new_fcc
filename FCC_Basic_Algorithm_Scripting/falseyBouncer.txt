@@ -1,0 +1,17 @@
+function bouncer(arr) {
+
+  // freeCodeCamp challenge. Returns given array with all 'falsey' values missing
+
+  
+
+  return arr.filter(item => item != false && item != null && item != 0 && item != "" && item != undefined && !(Number.isNaN(item)));
+
+
+
+}
+
+
+
+console.log(bouncer([7, "ate", "", false, 9]));
+
+console.log(bouncer([1, null, NaN, 2, undefined]));
