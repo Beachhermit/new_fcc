@@ -1,0 +1,19 @@
+#title {
+  text-align: center;
+  color: blue;
+}
+
+#svgCanvas {
+  background-color: pink;
+}
+
+#about {
+  display: block;
+  position: fixed;
+  width: 100%;
+  font-size: smaller;
+  background-color: lavender;
+  bottom: 0px;
+  left: 0px;
+  padding-left: 3em;
+}
